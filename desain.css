@@ -250,51 +250,22 @@ main {
 }
 
 /* ========================================= */
-/* Our Facilitation                          */
+/* Our Facilitation (Bagian yang terkait)    */
 /* ========================================= */
-.our-facilitation {
-    text-align: center;
-}
-
-.facilitation-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.facilitation-items .item {
-    text-align: center;
-    flex: 1;
-    min-width: 180px;
-    max-width: 250px;
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 255, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.facilitation-items .item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
-}
 
 .facilitation-items .item .circle {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border: 3px solid #00FFFF; /* Border tebal neon */
-    background-color: rgba(0, 255, 255, 0.1); /* Background circle transparan */
+    border-radius: 50%; /* Membuat lingkaran */
+    border: 3px solid #00FFFF;
+    background-color: rgba(0, 255, 255, 0.1);
     margin: 0 auto 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em; /* Untuk ikon jika ada */
-    color: #00FFFF;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Efek cahaya pada circle */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Penting untuk centering */
+    justify-content: center; /* Pusatkan konten horizontal */
+    align-items: center; /* Pusatkan konten vertikal */
+    overflow: hidden; /* Sangat Penting: Menyembunyikan bagian gambar di luar lingkaran */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .facilitation-items .item:hover .circle {
@@ -302,30 +273,17 @@ main {
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
     border-color: #FF00FF;
 }
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eee; /* Optional background color */
-    margin: 0 auto 10px auto; /* Center circles */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
 
-.circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.facilitation-items .item p {
-    color: #E0E0E0;
-    font-size: 1.1em;
-    font-weight: 500;
+/* KODE BARU/MODIFIKASI UNTUK GAMBAR DI DALAM LINGKARAN */
+.facilitation-items .item .circle img {
+    width: 100%; /* Pastikan gambar mengisi 100% lebar parent (lingkaran) */
+    height: 100%; /* Pastikan gambar mengisi 100% tinggi parent (lingkaran) */
+    object-fit: cover; /* Ini yang membuat gambar "memenuhi" area, memotong sisi yang tidak perlu */
+    border-radius: 50%; /* Ini yang membuat gambar itu sendiri berbentuk lingkaran */
+    display: block; /* Menghilangkan spasi ekstra di bawah gambar */
+    /* Pastikan tidak ada margin/padding aneh pada gambar */
+    margin: 0;
+    padding: 0;
 }
 
 /* ========================================= */
