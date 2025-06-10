@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Adrian's Website</title>
+    <link rel="stylesheet" href="desain.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <span>My Website</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#My Hobby">My Hobby</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="banner-slideshow">
+            <div class="slides-container">
+                <img src="https://via.placeholder.com/1366x578/333333/FFFFFF?text=Futuristic+Banner+1" alt="Futuristic Banner 1" class="slide active">
+                <img src="https://via.placeholder.com/1366x578/444444/FFFFFF?text=Futuristic+Banner+2" alt="Futuristic Banner 2" class="slide">
+                <img src="https://via.placeholder.com/1366x578/555555/FFFFFF?text=Futuristic+Banner+3" alt="Futuristic Banner 3" class="slide">
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </section>
+
+        <section id="profile" class="welcome-section content-section">
+            <h1 id="welcomeMessage">Hi User, Welcome To Website</h1>
+            <p>Ini adalah website Pribadi Saya.Jadi mari kita mulai berkenalan!!</p>
+
+            <div class="personal-description">
+                <p>Halo, selamat datang teman-teman. Buat yang belum tahu nih, Aku Adrian Alfarisi Maulana, biasa dipanggil Adrian sebagai nama brandingku atau Aan untuk teman-temn yang ingin lebih dekatku. Aku lahir di Surabaya, 3 Agustus 2006. Yup, kalian tidak salah dengar, aku lahir di bulan Indonesia merdeka.</p>
+                <p>Sekilas tentang aku, saat ini aku sedang menjadi seseorang mahasiswa setelah dinyatakan lulus lewat jalur UTBK-SNBT di UPN "Veteran" Jawa Timur, dengan Jurusan Sains Data.</p>
+
+            </div>
+            <div class="name-input-container">
+                <input type="text" id="userNameInput" placeholder="Masukkan nama Anda">
+                <button id="setUserNameBtn">Set Nama</button>
+            </div>
+        </section>
+
+        <section id="My hobby" class="our-facilitation content-section">
+            <h2>Hobi Saya</h2>
+            <div class="facilitation-items">
+                <div class="item">
+                    <div class="circle"></div>
+                    <p>Berolahraga</p>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <p>Bermain dengan Kucing</p>
+                </div>
+                <div class="item">
+                    <div class="circle"></div>
+                    <p>Menjelajahi tempat baru</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us" class="message-us content-section">
+            <h2>Message Us</h2>
+            <div class="message-content">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir</label>
+                        <input type="date" id="dob">
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="lakiLaki" name="gender" value="Laki-Laki">
+                            <label for="lakiLaki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" placeholder="Pesan"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="user-info">
+                    <p>Current time: <span id="currentTime"></span></p>
+                    <p>Nama: <span id="displayNama">-</span></p>
+                    <p>Tanggal Lahir: <span id="displayTanggalLahir">-</span></p>
+                    <p>Jenis Kelamin: <span id="displayJenisKelamin">-</span></p>
+                    <p>Pesan: <span id="displayPesan">(Tergantung pesan yang dikirim)</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>@copyright by Adrian 2025</p>
+    </footer>
+
+    <script src="otak.js"></script>
+</body>
+</html>
