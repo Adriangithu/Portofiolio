@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //     plusSlides(1);
     // }, 5000); // Ganti gambar setiap 5 detik
 
+
     // =========================================
     // B. Welcome Message (Dynamic with user input)
     // =========================================
@@ -35,13 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const setUserNameBtn = document.getElementById('setUserNameBtn');
 
     function updateWelcomeMessage(name) {
-        welcomeMessageElement.textContent = `Hi ${name || 'User'}, Welcome To Website`;
+        welcomeMessageElement.textContent = `Hi ${name || 'User'}, Welcome To My Portfolio`;
     }
 
     setUserNameBtn.addEventListener('click', () => {
         const userName = userNameInput.value.trim();
         updateWelcomeMessage(userName);
-        userNameInput.value = ''; // Clear input after setting
+     userNameInput.value = ''; // Clear input after setting
         // Optional: hide the input container after name is set
         // document.querySelector('.name-input-container').style.display = 'none';
     });
@@ -67,10 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
             timeZoneName: 'short',
             hour12: false // Use 24-hour format
         };
-        // Format the timezone for Indonesia context (WIB, WITA, WIT)
-        // Note: JavaScript's toLocaleDateString might give generic GMT offset.
-        // For specific 'WIB' text, you'd need a mapping or a library.
-        // Here, we'll stick to what toLocaleDateString provides.
         currentTimeElement.textContent = now.toLocaleDateString('en-US', options);
     }
     updateCurrentTime();
@@ -84,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displayNama = document.getElementById('displayNama');
     const displayTanggalLahir = document.getElementById('displayTanggalLahir');
     const displayJenisKelamin = document.getElementById('displayJenisKelamin');
-    const displayPesan = document.getElementById('displayPesan');
+ const displayPesan = document.getElementById('displayPesan');
 
     messageForm.addEventListener('submit', (event) => {
         event.preventDefault(); // Prevent form from refreshing the page
