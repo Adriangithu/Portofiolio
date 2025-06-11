@@ -437,7 +437,7 @@ main {
     border: 1px solid #FF00FF;
     border-radius: 5px;
     padding: 10px 15px;
-    color: #E0E0E0;
+    color: #B0B0B0;
     font-size: 0.95em;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
@@ -503,7 +503,7 @@ main {
 .message-us textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #00FFFF;
+    border: 1px solid #B026FF;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.08);
     color: #E0E0E0;
@@ -544,7 +544,7 @@ main {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
-    border: 2px solid #00FFFF;
+    border: 2px solid #B026FF;
     border-radius: 50%;
     background-color: transparent;
     position: relative;
@@ -563,7 +563,7 @@ main {
     content: '';
     width: 10px;
     height: 10px;
-    background-color: #E0E0E0;
+    background-color: #545454;
     border-radius: 50%;
     position: absolute;
     top: 50%;
