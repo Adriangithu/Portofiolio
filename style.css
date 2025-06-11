@@ -643,12 +643,13 @@ footer {
         margin-bottom: 10px;
     }
 
-    .navbar nav ul {
+   
+.navbar nav ul {
         flex-direction: column;
         width: 100%;
-        text-align: center;
-        padding:0;
-        align-items: center;
+        text-align: center; /* Memusatkan teks di dalam ul (parent) */
+        padding: 0;
+        align-items: center; /* Memusatkan item li secara horizontal */
     }
 
     .navbar nav ul li {
@@ -660,8 +661,12 @@ footer {
         display: block;
         padding: 8px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        text-align: center;
+        box-sizing: border-box;
+        text-align: center; /* BARU/PENTING: Memusatkan teks di dalam link itu sendiri */
     }
+
+    /* ... (kode lainnya tetap sama) ... */
+}
 
     .navbar nav ul li:last-child a {
         border-bottom: none;
