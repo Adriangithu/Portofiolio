@@ -650,6 +650,7 @@ footer {
         text-align: center; /* Memusatkan teks di dalam ul (parent) */
         padding: 0;
         align-items: center; /* Memusatkan item li secara horizontal */
+        justify-content: center;
     }
 
     .navbar nav ul li {
@@ -662,7 +663,7 @@ footer {
         padding: 8px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         box-sizing: border-box;
-        text-align: center; /* BARU/PENTING: Memusatkan teks di dalam link itu sendiri */
+        text-align: center! important; /* BARU/PENTING: Memusatkan teks di dalam link itu sendiri */
     }
 
     /* ... (kode lainnya tetap sama) ... */
